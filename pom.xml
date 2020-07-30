@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.gable</groupId>
-    <artifactId>ffs</artifactId>
+    <artifactId>fss</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ffs</name>
+    <name>fss</name>
     <description>File Storage Service</description>
 
     <properties>
