@@ -1,0 +1,6 @@
+FROM openjdk:8u111-jdk-alpine
+ADD target/sla-0.0.1-SNAPSHOT.jar app.jar
+COPY target/zoneinfo /usr/share/zoneinfo
+RUN ln -sf /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
+# ENTRYPOINT ["java","-jar","/app.jar","--server.port=3100","--spring.data.mongodb.host=192.168.175.152"]
+ENTRYPOINT ["java","-jar","/app.jar","--server.port=3100","--spring.profiles.active=sit"]
