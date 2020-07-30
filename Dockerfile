@@ -9,5 +9,5 @@ COPY src /build/src
 RUN mvn package -DskipTests
 COPY docker-run-spring-boot.sh /build
 # Run springboot
-EXPOSE 8005
+EXPOSE 80
 ENTRYPOINT ["bash", "/build/docker-run-spring-boot.sh"]
