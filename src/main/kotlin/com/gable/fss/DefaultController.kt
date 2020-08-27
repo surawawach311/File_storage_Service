@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.multipart.MultipartFile
 import java.io.File
 
+@CrossOrigin
 @RestController
 @RequestMapping("/")
 open class DefaultController {
